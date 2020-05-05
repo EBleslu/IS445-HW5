@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IS445 Homework 5</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="head">
+        <h1>Midterm Exam</h1>
+        <h4>Find all prime numbers between two numbers</h4>
+    </header>
+    <main>
+        <div id="numbers" class="form">
+            <div class="inputs">
+                <div class="input">
+                    <label for="name">Number 1: </label>
+                    <input type="number" name="number1" id="number1" required>
+                </div>
+                <div class="input">
+                    <label for="email">Number 2: </label>
+                    <input type="number" name="number2" id="number2" min="2" required>
+                </div>
+            </div>
+            <div class="submit">
+              <button onclick="check_numbers()">Submit</button>
+            </div>
+        </div>
+        <h4 id="error">Invalid input, please try again.</h4>
+        <div id="result">
+            <h3>number prime</h3>
+            <p>list prime</p>
+        </div>
+    </main>
+</body>
+</html>
